@@ -1,12 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #1a1423;
+  --background: #0c0a10;
+  --foreground: #f3ebef;
   --ink: #1a1423;
   --blush: #fdf2f4;
-  --rose: #e8b4bc;
-  --accent: #9b6b8f;
+  --panel: #141018;
+  --elevated: #1c1722;
+  --rose: #d497a8;
+  --accent: #bd92b8;
 }
 
 @theme inline {
@@ -14,6 +16,8 @@
   --color-foreground: var(--foreground);
   --color-ink: var(--ink);
   --color-blush: var(--blush);
+  --color-panel: var(--panel);
+  --color-elevated: var(--elevated);
   --color-rose: var(--rose);
   --color-accent: var(--accent);
   --font-sans: var(--font-dm-sans);

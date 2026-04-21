@@ -5,7 +5,7 @@ import Link from "next/link";
  */
 export function Footer() {
   return (
-    <footer className="border-t border-ink/10 bg-ink text-blush">
+    <footer className="border-t border-white/10 bg-ink text-blush">
       <div className="mx-auto flex max-w-6xl flex-col gap-10 px-4 py-10 sm:px-6 lg:flex-row lg:justify-between lg:px-8">
         <div>
           <p className="font-serif text-2xl">Guerita Inkz</p>
@@ -62,7 +62,7 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className="border-t border-blush/10">
+      <div className="border-t border-white/10">
         <p className="mx-auto max-w-6xl px-4 py-4 text-xs text-blush/60 sm:px-6 lg:px-8">
           © {new Date().getFullYear()} Guerita Inkz. Built with Next.js — swap
           placeholder text and imagery when your copy and photos are ready.

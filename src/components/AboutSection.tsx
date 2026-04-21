@@ -7,11 +7,11 @@ export function AboutSection() {
   return (
     <section
       id="about"
-      className="border-b border-ink/10 bg-white py-16 sm:py-20"
+      className="border-b border-white/10 bg-background py-16 sm:py-20"
       aria-labelledby="about-heading"
     >
       <div className="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8">
-        <div className="relative mx-auto aspect-[3/4] w-full max-w-md overflow-hidden rounded-3xl border border-ink/10 bg-blush shadow-md lg:max-w-none">
+        <div className="relative mx-auto aspect-[3/4] w-full max-w-md overflow-hidden rounded-3xl border border-white/10 bg-panel shadow-md shadow-black/30 lg:max-w-none">
           <Image
             src="https://picsum.photos/seed/guerita-artist/720/960"
             alt="Placeholder portrait of the tattoo artist at work"
@@ -28,11 +28,11 @@ export function AboutSection() {
           </p>
           <h2
             id="about-heading"
-            className="mt-3 font-serif text-3xl text-ink sm:text-4xl"
+            className="mt-3 font-serif text-3xl text-foreground sm:text-4xl"
           >
             Line-first, client-centered, detail-obsessed.
           </h2>
-          <div className="mt-6 space-y-4 text-base leading-relaxed text-ink/75">
+          <div className="mt-6 space-y-4 text-base leading-relaxed text-foreground/75">
             <p>
               Hi, I&apos;m behind Guerita Inkz — a private studio focused on
               tattoos that feel intentional: florals with architecture, lettering
@@ -49,17 +49,17 @@ export function AboutSection() {
               to long-term projects.
             </p>
           </div>
-          <ul className="mt-8 grid gap-3 text-sm text-ink/80 sm:grid-cols-2">
-            <li className="rounded-2xl border border-ink/10 bg-blush/60 px-4 py-3">
+          <ul className="mt-8 grid gap-3 text-sm text-foreground/80 sm:grid-cols-2">
+            <li className="rounded-2xl border border-white/10 bg-foreground/5 px-4 py-3">
               Fine line &amp; ornamental
             </li>
-            <li className="rounded-2xl border border-ink/10 bg-blush/60 px-4 py-3">
+            <li className="rounded-2xl border border-white/10 bg-foreground/5 px-4 py-3">
               Black &amp; gray botanicals
             </li>
-            <li className="rounded-2xl border border-ink/10 bg-blush/60 px-4 py-3">
+            <li className="rounded-2xl border border-white/10 bg-foreground/5 px-4 py-3">
               Delicate lettering
             </li>
-            <li className="rounded-2xl border border-ink/10 bg-blush/60 px-4 py-3">
+            <li className="rounded-2xl border border-white/10 bg-foreground/5 px-4 py-3">
               Custom flash reinterpreted
             </li>
           </ul>

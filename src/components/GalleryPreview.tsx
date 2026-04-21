@@ -8,7 +8,7 @@ export function GalleryPreview() {
   return (
     <section
       id="gallery"
-      className="border-b border-ink/10 bg-blush py-16 sm:py-20"
+      className="border-b border-white/10 bg-panel py-16 sm:py-20"
       aria-labelledby="gallery-heading"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -19,19 +19,19 @@ export function GalleryPreview() {
             </p>
             <h2
               id="gallery-heading"
-              className="mt-2 font-serif text-3xl text-ink sm:text-4xl"
+              className="mt-2 font-serif text-3xl text-foreground sm:text-4xl"
             >
               Previous work
             </h2>
-            <p className="mt-3 max-w-xl text-base text-ink/75">
+            <p className="mt-3 max-w-xl text-base text-foreground/75">
               A few healed and fresh pieces to show line weight, contrast, and
               how designs sit on real bodies. Swap these placeholders for photos
               of your own work when you are ready.
             </p>
           </div>
-          <p className="text-sm text-ink/60">
+          <p className="text-sm text-foreground/60">
             {galleryItems.length} images · easy to extend in{" "}
-            <code className="rounded bg-white/80 px-1.5 py-0.5 text-xs text-ink">
+            <code className="rounded bg-foreground/10 px-1.5 py-0.5 text-xs text-foreground">
               src/data/galleryItems.ts
             </code>
           </p>
@@ -41,7 +41,7 @@ export function GalleryPreview() {
           {galleryItems.map((item) => (
             <figure
               key={item.id}
-              className="group overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-sm"
+              className="group overflow-hidden rounded-2xl border border-white/10 bg-elevated shadow-md shadow-black/40"
             >
               <div className="relative aspect-square">
                 <Image
@@ -52,7 +52,7 @@ export function GalleryPreview() {
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </div>
-              <figcaption className="px-4 py-3 text-sm font-medium text-ink">
+              <figcaption className="px-4 py-3 text-sm font-medium text-foreground">
                 {item.title}
               </figcaption>
             </figure>
