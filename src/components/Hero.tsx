@@ -10,8 +10,8 @@ export function Hero() {
       <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-rose/40 blur-3xl" />
       <div className="pointer-events-none absolute -left-16 bottom-0 h-64 w-64 rounded-full bg-accent/20 blur-3xl" />
 
-      <div className="relative mx-auto flex max-w-6xl flex-col gap-10 px-4 py-16 sm:px-6 sm:py-20 lg:flex-row lg:items-center lg:gap-16 lg:px-8 lg:py-24">
-        <div className="max-w-xl flex-1">
+      <div className="relative mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+        <div>
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">
             Dallas · private studio vibes
           </p>
@@ -45,24 +45,6 @@ export function Hero() {
             Currently booking 6–8 weeks out for custom pieces. Flash days are
             announced on Instagram.
           </p>
-        </div>
-
-        <div className="flex-1">
-          <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-3xl border border-ink/10 bg-white shadow-lg shadow-ink/10 lg:max-w-none">
-            <div className="absolute inset-0 bg-gradient-to-tr from-rose/30 via-transparent to-accent/25" />
-            <div className="flex h-full flex-col justify-between p-6 sm:p-8">
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-widest text-ink/60">
-                  Featured mood
-                </p>
-                <p className="mt-2 font-serif text-2xl text-ink">Velvet blackwork</p>
-              </div>
-              <p className="max-w-xs text-sm leading-relaxed text-ink/70">
-                Placeholder for your hero photo: a healed tattoo detail, your
-                station setup, or a flat lay of inks and petals.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
