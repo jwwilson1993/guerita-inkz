@@ -11,18 +11,7 @@ export function AboutSection() {
       aria-labelledby="about-heading"
     >
       <div className="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8">
-        <div className="relative mx-auto aspect-[3/4] w-full max-w-md overflow-hidden rounded-3xl border border-white/10 bg-panel shadow-md shadow-black/30 lg:max-w-none">
-          <Image
-            src="https://picsum.photos/seed/guerita-artist/720/960"
-            alt="Placeholder portrait of the tattoo artist at work"
-            fill
-            className="object-cover"
-            sizes="(max-width: 1024px) 100vw, 50vw"
-            priority
-          />
-        </div>
-
-        <div>
+        <article>
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">
             About the artist
           </p>
@@ -30,7 +19,7 @@ export function AboutSection() {
             id="about-heading"
             className="mt-3 font-serif text-3xl text-foreground sm:text-4xl"
           >
-            Line-first, client-centered, detail-obsessed.
+            
           </h2>
           <div className="mt-6 space-y-4 text-base leading-relaxed text-foreground/75">
             <p>
@@ -49,20 +38,37 @@ export function AboutSection() {
               to long-term projects.
             </p>
           </div>
-          <ul className="mt-8 grid gap-3 text-sm text-foreground/80 sm:grid-cols-2">
-            <li className="rounded-2xl border border-white/10 bg-foreground/5 px-4 py-3">
-              Fine line &amp; ornamental
-            </li>
-            <li className="rounded-2xl border border-white/10 bg-foreground/5 px-4 py-3">
-              Black &amp; gray botanicals
-            </li>
-            <li className="rounded-2xl border border-white/10 bg-foreground/5 px-4 py-3">
-              Delicate lettering
-            </li>
-            <li className="rounded-2xl border border-white/10 bg-foreground/5 px-4 py-3">
-              Custom flash reinterpreted
-            </li>
-          </ul>
+        </article>
+
+        <div className="mx-auto hidden w-full max-w-sm flex-col gap-3 lg:flex lg:max-w-sm">
+          <div className="relative aspect-[3/2] w-3/4 overflow-hidden rounded-2xl border border-white/10 bg-panel shadow-md shadow-black/30">
+            <Image
+              src="https://picsum.photos/seed/guerita-artist-1/640/480"
+              alt="Tattoo design sketch on a studio desk"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 80vw, 32vw"
+              priority
+            />
+          </div>
+          <div className="relative ml-auto aspect-[3/2] w-3/4 overflow-hidden rounded-2xl border border-white/10 bg-panel shadow-md shadow-black/30">
+            <Image
+              src="https://picsum.photos/seed/guerita-artist-2/640/480"
+              alt="Close-up of fresh fine-line tattoo work"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 80vw, 32vw"
+            />
+          </div>
+          <div className="relative aspect-[3/2] w-3/4 overflow-hidden rounded-2xl border border-white/10 bg-panel shadow-md shadow-black/30">
+            <Image
+              src="https://picsum.photos/seed/guerita-artist-3/640/480"
+              alt="Artist station prepared for an appointment"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 80vw, 32vw"
+            />
+          </div>
         </div>
       </div>
     </section>
