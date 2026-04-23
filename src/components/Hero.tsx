@@ -46,11 +46,17 @@ function FacebookIcon({ className }: { className?: string }) {
 export function Hero() {
   return (
     <section
-      className="relative overflow-hidden border-b border-white/10 bg-gradient-to-b from-black via-[#050507] to-background"
+      className="relative overflow-hidden border-b border-white/10 bg-black md:bg-gradient-to-b md:from-black md:via-[#050507] md:to-background"
       aria-labelledby="hero-heading"
     >
-      <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-rose/10 blur-3xl" />
-      <div className="pointer-events-none absolute -left-16 bottom-0 h-64 w-64 rounded-full bg-accent/10 blur-3xl" />
+      <div
+        className="pointer-events-none absolute -right-24 -top-24 hidden h-72 w-72 rounded-full bg-rose/10 blur-3xl md:block"
+        aria-hidden="true"
+      />
+      <div
+        className="pointer-events-none absolute -left-16 bottom-0 hidden h-64 w-64 rounded-full bg-accent/10 blur-3xl md:block"
+        aria-hidden="true"
+      />
 
       <div className="relative flex flex-col items-center px-4 pt-12 sm:px-6 sm:pt-16 lg:px-8 lg:pt-20">
         <Image
