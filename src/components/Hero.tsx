@@ -116,10 +116,10 @@ export function Hero() {
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
             <a
-              href="#booking"
+              href="#contact"
               className="inline-flex items-center justify-center rounded-full bg-ink px-6 py-3 text-sm font-semibold text-blush shadow-sm transition hover:bg-accent"
             >
-              Start a booking request
+              Get in touch
             </a>
             <a
               href="#gallery"
@@ -129,8 +129,7 @@ export function Hero() {
             </a>
           </div>
           <p className="mt-6 text-xs text-foreground/55">
-            Currently booking 6–8 weeks out for custom pieces. Flash days are
-            announced on Instagram.
+            Flash days and studio updates are announced on Instagram.
           </p>
         </div>
       </div>

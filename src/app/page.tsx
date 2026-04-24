@@ -1,5 +1,4 @@
 import { AboutSection } from "@/components/AboutSection";
-import { BookingSection } from "@/components/BookingSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 import { GalleryPreview } from "@/components/GalleryPreview";
@@ -18,7 +17,6 @@ export default function Home() {
         <Hero />
         <AboutSection />
         <GalleryPreview />
-        <BookingSection />
         <ContactSection />
       </main>
       <Footer />

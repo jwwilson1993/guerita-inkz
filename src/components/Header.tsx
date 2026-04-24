@@ -11,7 +11,6 @@ import { useState } from "react";
 const navLinks = [
   { href: "#about", label: "About" },
   { href: "#gallery", label: "Work" },
-  { href: "#booking", label: "Book" },
   { href: "#contact", label: "Contact" },
 ] as const;
 
@@ -49,10 +48,10 @@ export function Header() {
             </a>
           ))}
           <a
-            href="#booking"
+            href="#contact"
             className="rounded-full bg-ink px-4 py-2 text-sm font-semibold text-blush shadow-sm transition hover:bg-accent"
           >
-            Request appointment
+            Get in touch
           </a>
         </nav>
 
@@ -88,11 +87,11 @@ export function Header() {
               </a>
             ))}
             <a
-              href="#booking"
+              href="#contact"
               className="mt-1 rounded-full bg-ink px-4 py-3 text-center text-sm font-semibold text-blush"
               onClick={() => setOpen(false)}
             >
-              Request appointment
+              Get in touch
             </a>
           </div>
         </nav>

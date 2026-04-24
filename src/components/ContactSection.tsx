@@ -3,7 +3,7 @@
 import { FormEvent, useState } from "react";
 
 /**
- * General contact form separate from booking (questions, collabs, press).
+ * General contact form (questions, collabs, press, inquiries).
  * Still front-end only for now.
  */
 export function ContactSection() {
@@ -29,12 +29,12 @@ export function ContactSection() {
             id="contact-heading"
             className="mt-2 font-serif text-3xl text-foreground sm:text-4xl"
           >
-            Questions, not ready to book yet?
+            Get in touch
           </h2>
           <p className="mt-3 text-base text-foreground/75">
-            Use this form for general messages — studio location details after
-            booking, merch questions, or collaboration ideas. For new tattoos,
-            the booking section keeps everything organized.
+            Use this form for general messages — studio questions, merch,
+            collaboration ideas, or anything else you would like the artist to
+            see.
           </p>
         </div>
 
@@ -81,8 +81,8 @@ export function ContactSection() {
                 Send message
               </button>
               <p className="text-center text-xs text-foreground/55">
-                This contact form is separate from the booking request form on
-                purpose.
+                Messages are recorded on the front end only until you connect
+                email or a server action.
               </p>
             </form>
           )}

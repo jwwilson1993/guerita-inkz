@@ -32,11 +32,6 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#booking" className="hover:text-rose">
-                  Booking
-                </a>
-              </li>
-              <li>
                 <a href="#contact" className="hover:text-rose">
                   Contact
                 </a>
