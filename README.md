@@ -31,14 +31,6 @@ Guerita Inkz is a front-end project focused on creating a polished web presence 
 - Designing a visual identity for a real-world brand
 - Improving project organization and deployment readiness
 
-## Live Demo
-
-Add link here if deployed.
-
-## Screenshots
-
-Add screenshots here.
-
 ## Future Improvements
 
 - Improve accessibility
