@@ -4,7 +4,6 @@ import Image from "next/image";
 import {
   useEffect,
   useLayoutEffect,
-  useState,
 } from "react";
 import { createPortal } from "react-dom";
 import { galleryItems } from "@/data/galleryItems";
@@ -21,7 +20,6 @@ type GalleryLightboxProps = {
 };
 
 export function GalleryLightbox({ initialIndex, onClose }: GalleryLightboxProps) {
-  const [mounted, setMounted] = useState(false);
   const {
     scrollerRef,
     activeIndex,
@@ -30,11 +28,6 @@ export function GalleryLightbox({ initialIndex, onClose }: GalleryLightboxProps)
   } = useSnapCarousel(galleryItems.length, initialIndex);
 
   useLayoutEffect(() => {
-    setMounted(true);
-  }, []);
-
-  useLayoutEffect(() => {
-    if (!mounted) return;
     const el = scrollerRef.current;
     if (!el) return;
     const apply = () => {
@@ -45,7 +38,7 @@ export function GalleryLightbox({ initialIndex, onClose }: GalleryLightboxProps)
     apply();
     const id = requestAnimationFrame(apply);
     return () => cancelAnimationFrame(id);
-  }, [initialIndex, mounted, scrollerRef]);
+  }, [initialIndex, scrollerRef]);
 
   useEffect(() => {
     const onKey = (e: globalThis.KeyboardEvent) => {
@@ -64,11 +57,10 @@ export function GalleryLightbox({ initialIndex, onClose }: GalleryLightboxProps)
   }, [onClose]);
 
   useLayoutEffect(() => {
-    if (!mounted) return;
     scrollerRef.current?.focus({ preventScroll: true });
-  }, [mounted, scrollerRef]);
+  }, [scrollerRef]);
 
-  if (!mounted || typeof document === "undefined") {
+  if (typeof document === "undefined") {
     return null;
   }
 
