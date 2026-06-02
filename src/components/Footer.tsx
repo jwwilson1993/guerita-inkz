@@ -1,8 +1,5 @@
 import Link from "next/link";
 
-/**
- * Simple footer with studio notes, quick links, and placeholder socials.
- */
 export function Footer() {
   return (
     <footer className="border-t border-white/10 bg-ink text-blush">
@@ -40,7 +37,7 @@ export function Footer() {
           </div>
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blush/70">
-              Placeholder socials
+              Social
             </p>
             <ul className="mt-3 space-y-2 text-sm">
               <li>
@@ -59,8 +56,7 @@ export function Footer() {
       </div>
       <div className="border-t border-white/10">
         <p className="mx-auto max-w-6xl px-4 py-4 text-xs text-blush/60 sm:px-6 lg:px-8">
-          © {new Date().getFullYear()} Guerita Inkz. Built with Next.js — swap
-          placeholder text and imagery when your copy and photos are ready.
+          &copy; {new Date().getFullYear()} Guerita Inkz. All rights reserved.
         </p>
       </div>
     </footer>

@@ -1,8 +1,5 @@
 import Image from "next/image";
 
-/**
- * About the artist: short story, studio etiquette, and a portrait placeholder.
- */
 export function AboutSection() {
   return (
     <section

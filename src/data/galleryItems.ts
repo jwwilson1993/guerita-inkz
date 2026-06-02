@@ -1,17 +1,7 @@
-/**
- * Central list of gallery images for the homepage preview.
- * Add new objects here later to grow the gallery without touching layout code.
- *
- * Next.js `<Image sizes="...">` for these paths is set under
- * `components/GalleryPreview/` from the real layout (padding, grid, lightbox).
- */
 export type GalleryItem = {
   id: string;
-  /** Shown in lightboxes or captions later */
   title: string;
-  /** Accessible description of the piece */
   alt: string;
-  /** Paths are served from /public */
   src: string;
 };
 

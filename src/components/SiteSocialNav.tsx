@@ -1,4 +1,3 @@
-/** Replace `#` with full profile URLs when you have them. */
 export const SITE_SOCIAL_URLS = {
   snapchat: "#",
   instagram: "#",
@@ -48,9 +47,6 @@ type SiteSocialNavProps = {
   iconClassName?: string;
 };
 
-/**
- * Snapchat, Instagram, and Facebook links — shared by Hero and Contact.
- */
 export function SiteSocialNav({
   className,
   ringOffsetClass,

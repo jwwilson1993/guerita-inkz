@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { galleryItems } from "@/data/galleryItems";
 import { DesktopGalleryGrid } from "./DesktopGalleryGrid";
 import { GalleryLightbox } from "./GalleryLightbox";
 import { MobileGallery } from "./MobileGallery";
@@ -53,12 +52,6 @@ export function GalleryPreview() {
               how designs sit on real bodies.
             </p>
           </div>
-          <p className="text-sm text-foreground/60">
-            {galleryItems.length} images · easy to extend in{" "}
-            <code className="rounded bg-foreground/10 px-1.5 py-0.5 text-xs text-foreground">
-              src/data/galleryItems.ts
-            </code>
-          </p>
         </div>
 
         <MobileGallery onOpenLightbox={openLightbox} />
