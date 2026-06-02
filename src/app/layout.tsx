@@ -15,9 +15,9 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Guerita Inkz | Tattoo studio",
+  title: "Guerita Inkz",
   description:
-    "Appointment-only tattoo studio specializing in fine line, ornamental, and feminine-forward blackwork.",
+    "Yakima, WA tattoo artist offering appointment-only black and grey, fine detail, lettering, and custom tattoo work.",
 };
 
 export default function RootLayout({

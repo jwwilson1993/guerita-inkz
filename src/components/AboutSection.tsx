@@ -4,20 +4,37 @@ export function AboutSection() {
   return (
     <section
       id="about"
-      className="border-b border-white/10 bg-background py-16 sm:py-20"
+      className="relative overflow-hidden border-b border-white/10 bg-background py-16 sm:py-20"
       aria-labelledby="about-heading"
     >
-      <div className="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8">
+      <div
+        className="absolute inset-y-0 left-0 w-full md:left-1/2 md:max-w-5xl md:-translate-x-1/2"
+        aria-hidden="true"
+      >
+        <div className="relative h-full w-full md:w-[58%]">
+          <Image
+            src="/AboutSection-bgimg.jpg"
+            alt=""
+            fill
+            aria-hidden="true"
+            className="pointer-events-none object-cover object-[50%_78%] opacity-55 blur-sm md:object-[42%_72%]"
+            sizes="(max-width: 768px) 100vw, 594px"
+          />
+        </div>
+      </div>
+      <div
+        className="absolute inset-0 bg-background/50"
+        aria-hidden="true"
+      />
+
+      <div className="relative mx-auto grid max-w-5xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8">
         <article>
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">
+          <p
+            id="about-heading"
+            className="text-sm font-semibold uppercase tracking-[0.2em] text-accent"
+          >
             About the artist
           </p>
-          <h2
-            id="about-heading"
-            className="mt-3 font-serif text-3xl text-foreground sm:text-4xl"
-          >
-            
-          </h2>
           <div className="mt-6 space-y-4 text-base leading-relaxed text-foreground/75">
             <p>
               Hi, I&apos;m Destiny, a tattoo artist based in Yakima with over 6

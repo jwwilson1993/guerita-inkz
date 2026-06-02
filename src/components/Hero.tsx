@@ -39,19 +39,20 @@ export function Hero() {
       <div className="relative mx-auto max-w-3xl px-4 pb-16 pt-8 sm:px-6 sm:pb-20 sm:pt-10 lg:px-8 lg:pb-24 lg:pt-12">
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">
-            Dallas · private studio vibes
+            Yakima, WA / appointment-only home studio
           </p>
           <h1
             id="hero-heading"
             className="mt-4 font-serif text-4xl leading-tight text-foreground sm:text-5xl lg:text-6xl"
           >
-            Tattoos with softness, structure, and a little edge.
+            Custom tattoos with meaning, detail, and a little edge.
           </h1>
           <p className="mt-5 max-w-prose text-base leading-relaxed text-foreground/75 sm:text-lg">
-            Guerita Inkz is the appointment-only practice of a tattoo artist who
-            loves fine lines, ornamental details, and pieces that feel personal.
-            Calm chair energy, crisp line work, and a collaborative design process
-            from sketch to healed skin.
+            Guerita Inkz is Destiny&apos;s private tattoo practice in Yakima,
+            creating black and grey pieces, fine details, lettering, and custom
+            designs in a calm, one-on-one setting. Every appointment is built
+            around clean work, clear communication, and a tattoo that feels
+            personal from the first idea to healed skin.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
             <a
@@ -68,7 +69,8 @@ export function Hero() {
             </a>
           </div>
           <p className="mt-6 text-xs text-foreground/55">
-            Flash days and studio updates are announced on Instagram.
+            Booking updates, flash, and available appointment times are shared on
+            Instagram.
           </p>
         </div>
       </div>

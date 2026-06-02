@@ -7,8 +7,8 @@ export function Footer() {
         <div>
           <p className="font-serif text-2xl">Guerita Inkz</p>
           <p className="mt-3 max-w-xs text-sm leading-relaxed text-blush/80">
-            Appointment-only tattoo studio. Inclusive chair, clear consent
-            practices, and jewelry-grade attention to hygiene.
+            Appointment-only tattooing in Yakima, WA. A private, comfortable
+            setup with clear consent practices and careful attention to hygiene.
           </p>
         </div>
 
